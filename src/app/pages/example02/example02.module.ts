@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { Example02PageRoutingModule } from './example02-routing.module';
 
 import { Example02Page } from './example02.page';
+import { RandomNumberComponent } from 'src/app/components/random-number/random-number.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { Example02Page } from './example02.page';
     IonicModule,
     Example02PageRoutingModule
   ],
-  declarations: [Example02Page]
+  declarations: [Example02Page, RandomNumberComponent]
 })
 export class Example02PageModule {}
