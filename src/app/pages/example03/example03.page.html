@@ -1,9 +1,12 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>example03</ion-title>
+    <ion-title class="ion-text-center">Eventos (click)</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content class="ion-padding">
+  <ion-button (click)="decrementValue()">-</ion-button>
+  <ion-button (click)="generateValue()">Genera valor</ion-button>
+  <ion-button (click)="incrementValue()">+</ion-button>
+  <h1>{{ n }}</h1>
 </ion-content>
