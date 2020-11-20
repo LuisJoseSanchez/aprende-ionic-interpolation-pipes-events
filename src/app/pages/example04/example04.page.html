@@ -1,9 +1,16 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>example04</ion-title>
+    <ion-title class="ion-text-center">Enlazado bidireccional</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label>Texto: </ion-label>
+    <ion-input [(ngModel)]="text"></ion-input>
+  </ion-item>
+  
+  <ion-button (click)="clearText()">Reset</ion-button>
 
+  <h1>{{ text | uppercase }}</h1>
 </ion-content>
