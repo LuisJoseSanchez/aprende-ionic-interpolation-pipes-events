@@ -1,9 +1,16 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>example01</ion-title>
+    <ion-title class="ion-text-center">Interpolación y filtros</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content class="ion-padding">
+  <p>x vale {{ x }}</p>
+  <p>y vale {{ y }}</p>
+  <p>x + y vale {{ x + y }}</p>
+  <p>word vale {{ word }}</p>
+  <p>person vale {{ person | json}}</p>
+  <p>nombre: {{ person.name | uppercase }}</p>
+  <p>puesto: {{ person.job }}</p>
+  <p>salario: {{ person.salary | currency:'€' }}</p>
 </ion-content>
