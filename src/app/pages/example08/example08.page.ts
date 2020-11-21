@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Example08Page implements OnInit {
 
+  temperature: number;
+
   constructor() { }
 
   ngOnInit() {
+    this.temperature = Math.floor(Math.random() * 20 + 1);
+  }
+
+  incTemperature(increment: number) {
+    this.temperature += increment;
   }
 
 }
