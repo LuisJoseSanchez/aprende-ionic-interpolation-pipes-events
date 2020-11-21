@@ -1,9 +1,19 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>example05</ion-title>
+    <ion-title class="ion-text-center">Directiva estructural *ngFor</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
+  <b>Números:</b>
+  <span *ngFor="let n of numbers">
+    {{ n }}
+  </span>
 
+  <br><br>
+
+  <b>Frutas:</b>
+  <p *ngFor="let f of fruits">
+    {{ f }}
+  </p>
 </ion-content>
