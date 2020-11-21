@@ -1,9 +1,27 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>example06</ion-title>
+    <ion-title class="ion-text-center">Añadiendo elementos</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
+  <b>Números:</b>
+  <span *ngFor="let n of numbers"> {{ n }} </span>
+  <br>
+  Inserta número:
+  <input
+    [(ngModel)]="inputNumber"
+    (keyup.enter)="insertNumber()"
+    type="text">
 
+  <br><br>
+
+  <b>Frutas:</b>
+  <span *ngFor="let f of fruits"> {{ f }} </span>
+  <br>
+  Inserta fruta:
+  <input
+    [(ngModel)]="inputFruit"
+    (keyup.enter)="insertFruit()"
+    type="text">
 </ion-content>
